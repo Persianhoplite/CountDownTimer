@@ -6,4 +6,15 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
+    background-color: #111023;
+}
+
+img {
+    width: 1700px;
+    height: 800px;
+    object-fit: fill;
+    position: relative;
+    top: 135px;
+    left: 110px;
+    box-shadow: 2px 2px 5px 6px lightblue;   
 }
