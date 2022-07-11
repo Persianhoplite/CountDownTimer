@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #111023;
+    color: #111023;
+    background-image: url(/images/programmer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: -1;
+}
+/* --------------------------Frame design-------------------------*/ 
+h1 {
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.countdown-container {
+    display: flex;
+}
+.big-text {
+    font-size: 6rem;
+    margin: 0 2rem;
+    line-height: 1;
+}
+.countdowns {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    padding: .5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210px;
+    height: 150px;
+}
+.countdowns span {
+    font-size: 1.5rem;
+}
+
+/* Dropdown Menu Design */
+nav {
+    width : 300px; 
+    margin : 40px auto;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.31); 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .nav-span {
+    padding : 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    color : #111023;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+  }
+  
+  .nav-span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+  }
+  
+  .slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    padding-right: 30px;
+  }
+.slide li a {
+    text-decoration: none;
+    color: #111023;
+}
+  #touch {position: absolute; opacity: 0; height: 0px;}    
+  
+  #touch:checked + .slide {height: 300px;}
