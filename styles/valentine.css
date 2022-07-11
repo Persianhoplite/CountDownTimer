@@ -7,8 +7,8 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background-color: #111023;
-    color: aliceblue;
-    background-image: url(/images/MainImage.jpg);
+    color: #111023;
+    background-image: url(/images/valentine.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ nav {
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
     border: 1px solid rgba(255, 255, 255, 0.31);
-    color : white;
+    color : #111023;
     font-size : 1.2em;
     font-variant : small-caps;
     cursor : pointer;
@@ -111,7 +111,7 @@ nav {
   }
 .slide li a {
     text-decoration: none;
-    color: aliceblue;
+    color: #111023;
 }
   #touch {position: absolute; opacity: 0; height: 0px;}    
   
