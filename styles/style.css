@@ -5,33 +5,48 @@
 }
 body {
     margin: 0;
-    padding: 0;
     font-family: "Poppins", sans-serif;
     background-color: #111023;
     color: aliceblue;
+    background-image: url(/images/MainImage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 /* --------------------------Frame design-------------------------*/ 
-img {
-    width: 1700px;
-    height: 800px;
-    object-fit: fill;
-    position: relative;
-    top: 10px;
-    left: 110px;
-    box-shadow: 2px 2px 5px 6px lightblue; 
-    z-index: -100;  
-}
 h1 {
-    font-size: 80px;
-    position: relative;
-    top :250px;
-    left: 700px;
-    margin: 0;
+    font-size: 4rem;
+    margin-top: -2rem;
 }
 h2 {
-    font-size: 40px;
-    margin: 0;
-    position: relative;
-    top: 240px;
-    left: 770px;
+    font-size: 1.5rem;
+}
+.countdown-container {
+    display: flex;
+}
+.big-text {
+    font-size: 6rem;
+    margin: 0 2rem;
+    line-height: 1;
+}
+.countdowns {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    padding: .5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countdowns span {
+    font-size: 1.5rem;
 }
